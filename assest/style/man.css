@@ -1,0 +1,54 @@
+:root {
+    --headline1-color: #41414;
+    --headline2-color: #06800f;
+    --black-color: #000;
+    --primary-color: #06800f;
+    --white-color: #fff;
+    --white-color-2: #f3f3f3;
+    --red-color: #bd0513;
+    --background-color-1: #ec88b9;
+    --background-color-2: #fcdfeb;
+    --background-circle: #eac9d9;
+}
+
+@font-face {
+    font-family: lovepen;
+    src: url(/assest/font/VL_Lovepen\ Regular.otf);
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.row>* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.wrapper {
+    /* width: 1200px; */
+    margin: auto;
+}
+
+@media (min-width: 1200px) {}
+
+@media (max-width: 1030px) {}
+
+@media (max-width: 770px) {}
+
+@media (max-width: 500px) {}
