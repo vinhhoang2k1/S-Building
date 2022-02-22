@@ -22,6 +22,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-size: 62.5%;
     /* font-family: "Open Sans", sans-serif; */
@@ -41,6 +45,11 @@ body {
 
 h3 {
     margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
 }
 
 p {
@@ -111,11 +120,19 @@ p {
     line-height: 30px;
     margin-left: 10px;
     font-size: 1.5rem;
+    font-weight: 500;
+    background: -webkit-linear-gradient(220deg, #8656a2, #6177ff,#51ade0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navigation .menu {
     gap: 30px;
     justify-content: flex-end;
+}
+
+.navigation .menu .link {
+    color: unset;
 }
 
 .navigation .menu p {
@@ -124,6 +141,7 @@ p {
     font-size: 15px;
     color: var(--background-color-2);
 }
+
 
 .navigation .menu p:hover {
     transform: scale(1.2);
@@ -149,6 +167,7 @@ p {
     width: 100%;
     /* height: 90vh; */
     height: 600px;
+    /* transform: translateX(-100%); */
     margin-top: var(--height-nav);
     background-size: cover;
     background-attachment: scroll;
@@ -509,18 +528,7 @@ p {
     width: 100%;
     position: relative;
 }
-.section-7 .wraper .image::after {
-    content: "";
-    position: absolute;
-    top: 10%;
-    left: 0;
-    z-index: 9;
-    border-radius: 9% 91% 76% 24% / 11% 18% 82% 89%  ;
-    background-color: var(--primary-color);
-    width: 420px;
-    height: 420px;
-    transform: rotate(81deg);
-}
+
 
 
 .section-7 .wraper .image img{
@@ -574,40 +582,388 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 /* section 8 */
 .section-8 {
-    min-height: 200px;
+    min-height: 100px;
     position: relative;
 }
 
-.section-8::after {
+/* .section-8::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: 30%;
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-image: url(../image/wave.png);
+    background-image: url(../image/footer-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.section-8 p {
+} */
+/* .section-8 p {
     font-size: 100px;
+} */
+.section-8 .contact {
+    position: relative;
+    margin: 100px auto;
+    padding: 30px 100px;
+    border-radius: 10px;
+    width: 70%;
+    background: rgb(134,85,162);
+    background: linear-gradient(150deg, rgba(134,85,162,1) 43%, rgba(74,178,228,1) 95%);
+}
+
+.section-8 .contact::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.section-8 .contact form {
+    position: relative;
+    z-index: 10;
+}
+
+.section-8 .contact  .title {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+    font-weight: 600;
+}
+.section-8 .contact form .descriptions,
+.section-8 .contact form input {
+    width: 100%;
+    height: 40px;
+    line-height: 25px;
+    margin-bottom:10px ;
+    border-radius: 5px;
+    border-color: transparent;
+    outline: none;
+    resize: none;
+}
+
+.section-8 .contact form .descriptions {
+    height: 80px;
+}
+
+.section-8 .contact form .button {
+    padding: 5px 50px;
+    display: block;
+    margin: 30px auto;
+    background-color: var(--background-color-1);
+    border: transparent;
+    transition: .2s linear;
+}
+
+.section-8 .contact form .button:hover {
+    background-color: var(--primary-color);
+}
+
+.section-9 {
+    background: rgb(101, 34, 107);
+    /* background: linear-gradient(0deg, rgba(75,48,77,0.5914740896358543) 0%, rgba(86,61,121,0.8687850140056023) 100%); */
+    height: 300px;
+    color: rgb(211, 231, 243);
+
+}
+
+.section-9 .logo {
+display: flex;
+margin: 50px 0 20px 0;
+}
+
+.section-9 .logo img {
+    width: 70px;
+    border-radius: 90rem;
+}
+
+.section-9 .logo .name {
+    width: 100%;
+    line-height: 70px;
+    margin-left: 10px ;
+    font-size: 40px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(220deg, #8656a2, #6177ff,#51ade0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-9  .descriptions {
+    font-size: 17px;
+    width: 75%;
+    text-align: justify;
+}
+
+.section-9 .title {
+    position: relative;
+    margin: 50px 0 20px 0;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 70px;
+    background: -webkit-linear-gradient(220deg, #8656a2, #6177ff,#51ade0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-9 .title::after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 1px;
+    background-color: #666;
+}
+
+.section-9 .contact {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: 600;
+}
+.section-9 .footer .sosials .link:hover,
+.section-9 .contact p:hover {
+    color: var(--primary-color);
+}
+.section-9 .footer .address {
+    font-size: 13px;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.section-9 .footer .sosials {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    justify-content: center;
+}
+.section-9 .footer .sosials i {
+    cursor: pointer;
 }
 
 
-
+.section-9 .footer .sosials .link {
+    color: unset;
+}
 @media (min-width: 1200px) {}
 
 @media (max-width: 1030px) {
     .wraper {
         width: 900px;
     }
+    .section-7 .feature-item  {
+        min-height: 300px;
+    }
+   .section-4 .wraper .category-card .image::after ,
+    .section-4 .wraper .category-card .image::before {
+    top: -12%;
+    left: 16%;
+    }
+    .section-6 .wraper .image {
+    object-fit: contain;
+    height: 100%;
+}
 }
 
 @media (max-width: 770px) {
+    body {
+        font-size: 55%;
+    }
     .wraper {
-        width: 700px;
+        width: 750px;
+    }
+    .section-2 .intro .slogan .title {
+        font-size: 25px;
+    }
+    .section-2 .intro .mobile .image1 {
+        left: 20%;
+    } 
+    .section-2 .intro .mobile .image2 {
+        left: 40%;
+    }
+    .section-3 .info .mobile::after {
+        left: 21%;
+    }
+    .section-3 .info .mobile .image1 {
+        left: 15%;
+    }
+    .section-4 .wraper .category-card .image img {
+        width: 60%;
+    }
+    .section-4 .wraper .category-card .image::after, .section-4 .wraper .category-card .image::before {
+    top: -12%;
+    left: 5%;
+    }
+    .section-7 .feature-item {
+    width: 95%;
+    margin: 5px auto;
+    padding: 5px 5px;
+    min-height: 220px;
+    }
+    .section-7 .wraper .image img {
+    width: 280px;
+    }
+    .section-8 .contact {
+    margin: 30px auto;
+    padding: 10px 33px; 
+    width: 90%;
+    }
+    .section-9 .descriptions {
+    width: 92%;
     }
 }
 
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+    :root {
+        --height-nav: 50px;
+    }
+    .wraper {
+        width: 350px;
+    }
+    .navigation .logo {
+    margin: 10px 0;
+    }
+    .navigation .menu {
+    display: none;
+    }
+    .section-2 {
+        height: 650px;
+    }
+    .section-2 .intro .slogan {
+    margin: 10px 0;
+    position: relative;
+    }
+    .section-2 .intro .slogan {
+    text-align: center;
+    }
+    .section-2 .intro .slogan .name,
+    .section-2 .intro .slogan .description {
+        text-shadow: none;
+    }
+    .section-2 .intro .slogan .title {
+    font-size: 18px;
+    text-shadow: none;
+    }
+
+    .section-2 .intro .slogan .description {
+        position: absolute;
+        bottom: 15%;
+        font-size: 12px;
+    }
+    .section-2 .intro .slogan .button {
+        position: absolute;
+        bottom: 5%;
+        left: 28%;
+        padding: 6px 30px;
+
+    }
+    .section-2 .intro .mobile {
+    position: absolute;
+    top: 22%;
+}
+    .section-2 .intro .mobile .image1 {
+    width: 170px;
+    height: 300px;
+    left: 5%;
+}
+.section-2 .intro .mobile .image2 {
+    
+    width: 144px;
+    height: 330px;
+    left: 40%;
+}
+
+.section-3 {
+    text-align: center;
+    min-height: 700px;
+    position: relative;
+}
+.section-3 .info .slogan .title-2,
+.section-3 .info .slogan .button,
+.section-3 .info .slogan .description {
+    position: absolute;
+    bottom: 0;
+}
+
+.section-3 .info .slogan .description.d1 {
+    bottom: 30%;
+}
+
+.section-3 .info .slogan .title-2 {
+    bottom: 28%;
+}
+
+.section-3 .info .slogan .description.d2 {
+    bottom: 3%;
+}
+
+.section-3 .info .slogan .button {
+    left: 32%;
+}
+
+
+.section-3 .info .mobile .image1 {
+    width: 240px;
+    height: 262px;
+    margin-top: 20px;
+    border-bottom-right-radius:0;
+}
+.section-3 .info .mobile::after {
+    display: none;
+}
+.section-4 .description p {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 10px;
+    text-align: justify;
+}
+.section-4 .wraper .category-card .image img {
+    width: 50%;
+}
+.section-4 .wraper .category-card .image::after, .section-4 .wraper .category-card .image::before {
+    top: -3%;
+    left: 19%;
+}
+.section-4 .wraper .category-card .description {
+    width: 90%;
+}
+.section-5 .wraper > img {
+    width: 90%;
+}
+.section-5 .wraper .title {
+    margin-top: 20px;
+}
+.section-5 .wraper .description {
+    width: 90%;
+}
+.section-6 > .title, .section-7 > .title, .section-4 > .title {
+    font-size: 22px;
+}
+.section-7 .feature-item {
+    min-height: 220px;
+    text-align: justify;
+}
+.section-7 .feature-item i {
+    width: 100%;
+    text-align: center;
+}
+.section-7 .feature-item .title {
+    font-size: 12px;
+}
+.section-7 .feature-item .description  {
+    font-size: 10px;
+}
+.section-9 {
+    height: 80vh;
+}
+
+}

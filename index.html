@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./assest/style/import.css">
     <link rel="stylesheet" href="./assest/style/layout.css">
     <link rel="stylesheet" href="./assest/style/man.css">
@@ -19,17 +21,25 @@
     <!-- <div class="container "> -->
     <div class="nav-wrap">
         <div class="wraper navigation row">
-            <div class="col-lg-3 col-md-3 col-xs-3 logo pointer">
+            <div class="col-lg-3 col-md-3 col-12 logo pointer">
                 <img src="./assest/image/sims_logo.png" alt="">
                 <p>building</p>
             </div>
-            <div class="col-lg-9 col-md-9 col-xs-9 menu">
-                <p>trang chủ</p>
-                <p>giới thiệu</p>
-                <p>nền tảng</p>
-                <p>chi tiết</p>
+            <div class="col-lg-9 col-md-9 col-sm-9 menu">
+                <a class="link active" href="#">
+                    <p>trang chủ</p>
+                </a>
+                <a class="link" href="#l1">
+                    <p>giới thiệu</p>
+                </a>
+                <a class="link" href="#l2">
+                    <p>nền tảng</p>
+                </a>
+                <a class="link" href="#l3">
+                    <p>chi tiết</p>
+                </a>
                 <span class="pointer button hotline ">
-                    HOTLINE:123456789
+                    HOTLINE
                 </span>
             </div>
         </div>
@@ -39,18 +49,19 @@
     <!-- start section 2 -->
     <div class="section-2">
         <div class="row wraper intro">
-            <div class="col-lg-6 slogan">
+            <div class="col-lg-6 col-md-6 slogan">
                 <p class="name">BUILDING</p>
                 <p class="title">Giải Pháp Quản Lý Vận Hành Tòa Nhà Tự Động</p>
                 <p class="description">
-                    Phần mềm quản lý tòa nhà thông minh BUILDING mang đến giải pháp toàn diện cho Chủ đầu tư, Ban quản
+                    Phần mềm quản lý tòa nhà thông minh BUILDING mang đến giải pháp toàn diện cho Chủ đầu tư, Ban
+                    quản
                     lý
                 </p>
-                <span class="pointer button experience">
+                <span class="pointer button experience" id="l1">
                     trải nghiệm
                 </span>
             </div>
-            <div class="col-lg-6 mobile">
+            <div class="col-lg-6 col-md-6 mobile">
                 <div class="image1 bg-img"></div>
                 <div class="image2 bg-img"></div>
             </div>
@@ -60,19 +71,17 @@
     <!-- start section 3 -->
     <div class="section-3">
         <div class="row wraper info">
-            <div class="col-lg-6 slogan">
-
+            <div class="col-lg-6 col-md-6 slogan">
                 <p class="title">giới thiệu
                     <span class="name">BUILDING</span>
                 </p>
-
-                <p class="description">
+                <p class="description d1">
                     Là một trong những công ty tiên phong hàng đầu về ứng dụng nền tảng công nghệ vào thị trường quản lý
                     bất động sản tại
                     Việt Nam.
                 </p>
                 <p class="title-2">Tầm nhìn và sứ mệnh</p>
-                <p class="description">
+                <p class="description d2">
                     Với hơn 15 năm kinh nghiệm trong thị trường bất động sản tại Việt Nam cũng như thị trường Quốc Tế.
                     POMA mang đến cho
                     khách hàng một “ giải pháp quản lý vận hành tòa nhà tự động ” tiên tiến mà trên thế giới đang áp
@@ -83,7 +92,7 @@
                     trải nghiệm
                 </span>
             </div>
-            <div class="col-lg-6 mobile">
+            <div class="col-lg-6 col-md-6 mobile">
                 <div class="image1 bg-img"></div>
             </div>
         </div>
@@ -103,7 +112,7 @@
                 nhà.</p>
         </div>
         <div class="row wraper">
-            <div class="col-xl-4 col-lg-4 col-md-4 ">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-12 ">
                 <div class="category-card">
                     <div class="image ">
                         <img src="./assest/image/person-1.png" class=" bg-img"></img>
@@ -118,7 +127,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 ">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-12 ">
                 <div class="category-card">
                     <div class="image ">
                         <img src="./assest/image/person-2.png" class=" bg-img"></img>
@@ -130,11 +139,10 @@
                         Tự động hóa quy trình quản lý, tiết kiệm thời gian, chi phí cho Ban quản lý. Mang tới chất lượng
                         phục vụ và sự hài lòng
                         tốt nhất tới cư dân.
-
                     </p>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 ">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-12 ">
                 <div class="category-card">
                     <div class="image ">
                         <img src="./assest/image/person-3.png" class=" bg-img"></img>
@@ -152,7 +160,7 @@
     </div>
     <!-- end section 4 -->
     <!-- start section 5 -->
-    <div class="section-5">
+    <div class="section-5" id="l2">
         <div class="wraper">
             <img src="./assest/image/all-device.png" alt="">
             <p class="title">NỀN TẢNG SỬ DỤNG</p>
@@ -160,7 +168,9 @@
                 trên các thiết bị di động (điện
                 thoại, máy tính bảng)
             </p>
-            <span class="button">Đăng kí trải nghiệm</span>
+            <a href="#l4">
+                <span class="button" id="l3">Đăng kí trải nghiệm</span>
+            </a>
         </div>
     </div>
     <!-- end section 5 -->
@@ -171,7 +181,7 @@
             <span class="name">BUILDING</span>
         </div>
         <div class="row wraper">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="feature-item">
                     <i class='bx bxs-grid'></i>
                     <p class="title">Module quản lý tòa nhà - phân quyền</p>
@@ -200,9 +210,8 @@
                     <i class='bx bxs-report'></i>
                     <p class="title">Hệ thống thống kê - báo cáo</p>
                 </div>
-
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <img src="./assest/image/mobile-demo-3.png" alt="" class="image">
             </div>
         </div>
@@ -215,31 +224,29 @@
             <span class="name">BUILDING</span>
         </div>
         <div class="row wraper">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-5 ">
                 <div class="image">
                     <img src="./assest/image/mobile-demo-4.png" alt="">
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-12">
                 <div class="row feature-client">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-6">
                         <div class="feature-item">
                             <i class='bx bxs-terminal'></i>
                             <p class="title">Tiếp nhận thông báo từ BQL</p>
                             <p class="description">Cư dân nhận thông báo từ BQL ở bất cứ đâu, bất cứ thời điểm nào.</p>
                         </div>
-
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-6">
                         <div class="feature-item">
                             <i class='bx bx-credit-card'></i>
                             <p class="title">Thanh toán các khoản phí</p>
                             <p class="description">Nhận và thanh toán phí cho căn hộ mình ở bất kỳ đâu thông qua các
                                 cổng thanh toán online.</p>
                         </div>
-
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-6">
                         <div class="feature-item">
                             <i class='bx bx-repost'></i>
                             <p class="title">Phản ánh & thắc mắc</p>
@@ -247,50 +254,91 @@
                                 dõi quy trình xử lý một cách minh bạch. Mang lại
                                 hài lòng cho cư dân</p>
                         </div>
-
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-6">
                         <div class="feature-item">
                             <i class='bx bx-book-add'></i>
                             <p class="title">Đặt các dịch vụ tiện ích</p>
-                            <p class="description">Chủ động kiểm tra và đặt các dịch vụ tiện ích trong tòa nhà một cách
+                            <p class="description">Chủ động kiểm tra và đặt các dịch vụ tiện ích trong tòa nhà
+                                một cách
                                 chủ động, linh hoạt : Gym, tennis, bbq..</p>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- end section 7 -->
     <!-- start section 8 -->
-    <div class="section-8 ">
-        <div class="row wraper">
-            <div class="col-lg-6">
-                <!-- <p> KLAShfkjshfkjslkfjlaks fjlksfjlkasfjklasfjslkajflkh</p> -->
+    <section id="l4">
+    </section>
+    <div class="section-8">
+        <div class="row wraper contact">
+            <div class="col-lg-12">
+                <p class="title">TRẢI NGHIỆM VỚI CHÚNG TÔI</p>
+                <form action="">
+                    <input type="text" placeholder="Họ và tên" class="name">
+                    <input type="email" placeholder="email" class="email">
+                    <input type="number" placeholder="Số điện thoại" class="hotline">
+                    <textarea name="" class="descriptions" placeholder="Để lại lời nhắn với chúng tôi" id="" cols="30"
+                        rows="10"></textarea>
+                    <button class="button">Xác nhận</button>
+                </form>
             </div>
         </div>
     </div>
     <!-- end section 8 -->
+    <!-- start section 9 -->
+    <div class="section-9">
+        <div class="row wraper footer">
+            <div class="col-lg-6 col-md-6">
+                <div class="logo">
+                    <img src="./assest/image/sims_logo.png" alt="">
+                    <p class="name">building</p>
+                </div>
+                <p class="descriptions">BUILDING Giải pháp quản lý vận hành tòa nhà thông minh. Liên hệ ngay với
+                    Building để được hỗ trợ tốt nhất.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="title">Liên hệ</div>
+                <div class="contact">
+                    <p>(+84)-24-6260-2515</p>
+                    <p>info@simstech.vn</p>
+                </div>
+                <p class="address">Trụ sở :co-working space, NIC Building, Lot D25 Ton That Thuyet, Cau Giay
+                    district, Ha Noi, Vietnam.</p>
+                <div class="sosials">
+                    <a class="link" href="https://www.facebook.com/edu.simstech.vn">
+                        <i class='bx bxl-facebook-square'></i>
+                    </a>
+                    <a class="link" href="https://simstech.vn/">
+                        <i class='bx bx-globe'></i>
+                    </a>
+                    <i class='bx bxl-twitter'></i>
+                    <a class="link" href="https://www.linkedin.com/company/sims-jsc">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section 9 -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="./assest/javascript/main.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="./assest/javascript/anime.min.js"></script>
+    <script src="./assest/javascript/main.js"></script>
+    <script>
+        anime({
+            targets: '.section-2 .slogan',
+            translateX: [-1000, 0],
+            delay: 500,
+            easing: 'easeInOutSine'
+        });
+    </script>
 </body>
 
 </html>
